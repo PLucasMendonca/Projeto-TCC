@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+play-scraper
+python-dotenv
+pydantic
