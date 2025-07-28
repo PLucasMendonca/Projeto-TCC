@@ -1,0 +1,19 @@
+# ---------------------
+# Pastas que não devem ser versionadas
+# ---------------------
+
+Documentos/*
+
+# ---------------------
+# Arquivos de documentos pessoais
+# ---------------------
+*.docx
+*.doc
+*.pdf
+
+# ---------------------
+# EXCEÇÕES (permitir arquivos específicos)
+# ---------------------
+!Documentos/Artigo\ TCC\ \(Lucas\ Mendonça\).pdf
+!Documentos/Banner\ TCC.pdf
+!Documentos/Telas_app/
