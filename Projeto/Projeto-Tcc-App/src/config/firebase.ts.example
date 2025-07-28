@@ -1,0 +1,29 @@
+// Exemplo de configuração do Firebase para o projeto GamersLayer
+
+// Importações necessárias
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+
+// Configuração do Firebase - Preencha com suas credenciais
+const firebaseConfig = {
+  apiKey: "SEU_API_KEY_AQUI",
+  authDomain: "SEU_AUTH_DOMAIN_AQUI",
+  projectId: "SEU_PROJECT_ID_AQUI",
+  storageBucket: "SEU_STORAGE_BUCKET_AQUI",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID_AQUI",
+  appId: "SEU_APP_ID_AQUI",
+  measurementId: "SEU_MEASUREMENT_ID_AQUI"
+};
+
+// Inicialização do Firebase
+const app = initializeApp(firebaseConfig);
+
+// Exportações úteis
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
+
+// NOTE: Este é apenas um exemplo. Você deve criar seu próprio arquivo firebase.ts
+// com as credenciais reais e mantê-lo fora do controle de versão (gitignore).
