@@ -1,15 +1,13 @@
-# Ignorar tudo dentro da pasta Documentos
+# Ignora tudo dentro de Documentos
 Documentos/*
 
-# Não ignorar a própria pasta para permitir exceções
+# Libera a pasta Documentos para que exceções funcionem
 !Documentos/
 
-# Ignorar extensões globais fora da pasta Documentos (se desejar)
-# *.docx
-# *.doc
-# *.pdf
-
-# Liberar arquivos específicos dentro de Documentos
+# Libera arquivos específicos que você quer que apareçam
 !Documentos/Artigo TCC (Lucas Mendonça).pdf
 !Documentos/Banner TCC.pdf
+
+# Libera pasta e arquivos dentro dela
 !Documentos/Telas_app/
+!Documentos/Telas_app/**
